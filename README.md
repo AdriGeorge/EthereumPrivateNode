@@ -72,7 +72,9 @@ node$: geth attach geth.ipc
 ###  4]  Wait until 50%+1 of signers give you the autorization (clique.propose("address", true))
 
 Now you can interact with the blockchain from console.
+
 For the full list of geth command check: 
 https://ethereum.stackexchange.com/questions/28703/full-list-of-geth-terminal-commands
+
 For the full command line options check:
 https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options
