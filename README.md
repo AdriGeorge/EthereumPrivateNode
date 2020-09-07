@@ -39,12 +39,23 @@ Init the genesis file
 ```sh
 geth --datadir node/ init genesis.json
 ```
-Create a new account and save the data (password and address)
+Create a new account
 ```sh
 geth --datadir node/ account new
+```
+[OPTIONAL]
+Save the data (password and address)
+```sh
 echo 'password' >> node/password.txt
 echo 'address' >> accounts.txt
 ```
+Add the following flags to startnode.sh (you can skip this step, but after you have to unlock your account from cmd)
+
+--allow-insecure-unlock
+
+-unlock 'YOUR ACCOUNT'
+
+--password node/password.txt
 
 ### 2] Add your configuration
 
