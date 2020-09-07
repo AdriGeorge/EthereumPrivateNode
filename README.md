@@ -63,7 +63,7 @@ Open startnode.sh and change the following parmeters with yours: port, rpcaddr, 
 
 Make your sh file executable
 ```sh
-fileName$: chmod +x ./startnode.sh
+chmod +x ./startnode.sh
 ```
 
 ###  3]  Start the node and connect
@@ -71,11 +71,14 @@ fileName$: chmod +x ./startnode.sh
 ```sh
 ./startnode.sh
 ```
+If you have this error: /bin/bash^M: bad interpreter: No such file or directory
+
+just cancel the empty line (second) in startnode.sh
 
 Open a new terminal
 
 ```sh
-filename$: cd node
+cd node
 node$: geth attach geth.ipc
 ```
 
