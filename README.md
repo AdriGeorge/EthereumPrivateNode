@@ -49,7 +49,7 @@ Save the data (password and address)
 echo 'password' >> node/password.txt
 echo 'address' >> accounts.txt
 ```
-Add the following flags to startnode.sh (you can skip this step, but after you have to unlock your account from cmd)
+Add the following flags to startnode.sh (you can skip this step, but after you have to unlock your account from console with command: personal.unlockAccounts("account", "password"))
 
 --allow-insecure-unlock
 
