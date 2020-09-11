@@ -1,3 +1,3 @@
 #!/bin/bash
 
-geth --datadir node/ --minerthreads=1 --port 30314 --rpc --rpcaddr 'localhost' --rpcport 8504 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://3fbd8c9676477a26b2f9ef9e005a2b92fafc9b492d1e4dce959c9613f3f61acc9a4be23a279c279022edad76ec524614acf4a240a6d02eb7f5cdcf0cde41d72a@192.168.178.23:0?discport=30310' --networkid 58343 --gasprice '1'  --mine --ipcpath "~/EthereumPrivateNode/node/geth.ipc"
+geth --allow-insecure-unlock --datadir node2/ --syncmode 'full' --port 30312 --rpc --rpcaddr 'localhost' --rpcport 8502 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://c3cc53a5730793649f43c985cfd154de4c71607d4f003d02c55104d0ac444e8c4ea793ce2fb3d99a43b00c8b98f3b6caf2e2aecba2a95768d9b00646e1e5624d@192.168.178.23:0?discport=30310' --networkid 1515 --gasprice '0' --unlock '0x31A58DAd6C4128Dd5cEA3b0F40d1a23cD0f7265b' --password node2/password.txt --mine --ipcpath "~/blkSett/node2/geth.ipc"
