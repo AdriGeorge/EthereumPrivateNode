@@ -71,8 +71,6 @@ chmod +x ./startnode.sh
 ```sh
 ./startnode.sh
 ```
-If you have this error: "/bin/bash^M: bad interpreter: No such file or directory",
-just cancel the empty line (second) in startnode.sh
 
 Open a new terminal
 
